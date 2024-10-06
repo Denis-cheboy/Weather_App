@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer base {
+  body {
+    @apply bg-background-primary font-sans antialiased;
+    font-family:
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+  }
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -14,14 +27,49 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  /* Buttons */
+  .btn {
+    @apply px-4 py-2 rounded-full transition-all duration-200 font-medium;
+  }
+  .btn-primary {
+    @apply btn bg-primary-600 text-white hover:bg-primary-700;
+  }
+  .btn-secondary {
+    @apply btn bg-gray-200 text-text-primary hover:bg-gray-300;
+  }
+  .btn-outline {
+    @apply btn border-2 border-primary-600 text-primary-600 hover:bg-primary-50;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-background-primary rounded-lg p-4 shadow-md;
+  }
+  .card-highlight {
+    @apply card hover:shadow-lg transition-shadow duration-200;
+  }
+
+  /* Weather icons container */
+  .weather-icon {
+    @apply w-16 h-16 flex items-center justify-center rounded-full;
+  }
+  .weather-icon-sunny {
+    @apply weather-icon bg-sunny text-white;
+  }
+  .weather-icon-cloudy {
+    @apply weather-icon bg-cloudy text-white;
+  }
+  .weather-icon-rainy {
+    @apply weather-icon bg-rainy text-white;
+  }
+  .weather-icon-snowy {
+    @apply weather-icon bg-snowy text-white;
   }
 }
