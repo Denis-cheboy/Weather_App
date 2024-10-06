@@ -1,3 +1,16 @@
+**Project Overview **
+
+![weatherui1](https://github.com/user-attachments/assets/342b473e-000e-4228-b57e-b1a1c27341a1)
+
+![weatherui2](https://github.com/user-attachments/assets/d4519791-ab2f-4610-89c9-39c18e6f162a)
+![weatherui3](https://github.com/user-attachments/assets/7b8936f6-e030-42f1-932d-47fef4381eca)
+![weatherui4](https://github.com/user-attachments/assets/15416888-7f2f-4d5a-a4d7-a06e802ef35e)
+![weatherui5](https://github.com/user-attachments/assets/96cc4cd5-9403-4b8a-9c16-b593a7e243f8)
+
+**Project Explaination**
+Displays weather forecast for one week and also the current weather for every location using geolocation google api.
+It consumes Laravel endpoint fetching data
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
